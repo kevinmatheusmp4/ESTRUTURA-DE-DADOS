@@ -50,7 +50,7 @@ int main () {
                     Livro novoLivro;
                     printf("Digite o título do livro: ");
                     fgets(novoLivro.titulo, TAM_STRINGS, stdin);
-                    novoLivro.titulo[strcspn(novoLivro.titulo, "\n")] = 0; // Remove o '\n' do final
+                    novoLivro.titulo[strcspn(novoLivro.titulo, "\n\n")] = 0; // Remove o '\n' do final
 
                     printf("Digite o autor do livro: ");
                     fgets(novoLivro.autor, TAM_STRINGS, stdin);
